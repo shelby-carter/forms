@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:19-alpine
+    command: sh -c "npm install && npm start"
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    ports:
+      - "3000:3000" # Map TCP traffic on port 3000 of the container to port 3000 on the host
+    environment:
+      - NODE_ENV=development
