@@ -1,4 +1,4 @@
-# Use the official Node.js 16-alpine image as a parent image
+# Use the official Node.js 19-alpine image as a parent image
 FROM node:19-alpine
 
 # Set the working directory
